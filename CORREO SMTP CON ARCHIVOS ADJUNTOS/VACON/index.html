@@ -1,0 +1,413 @@
+﻿
+  <!DOCTYPE html>
+
+       <head>
+        
+     <link rel="icon" type="image/png" href="IMG/log.png" sizes="64x64">
+   <html lang="es">
+   <meta charset="utf-8">
+   <title>Va Consultores</title>
+       
+    <!--INICIO ETIQUETAS DE SEO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/inde.css" rel="stylesheet" type="text/css">   
+   <meta name="description" content="VACON Consultores te brinda soluciones financieras a tu medida. Facilitamos el crédito que necesitas rápido, seguro y de manera eficiente">     
+   <meta name="keywords" content="Financiera">
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>   
+    <!-- FIN DE ETIQUETAS DE SEO -->   
+     <!-- VINCULOS A FICHEROS -->      
+  <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       
+     <!--ETIQUETAS DE TIPO DE LETRA-->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">    
+     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">  
+       </head>
+       
+<body>
+    
+           
+        
+<div id="inicio"></div>
+        <nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" 
+style="text-align: center;
+       color: white;
+background-color: white;
+    
+       " >
+    <a class="navbar-brand" href=""><img class="logo wow zoomIn" data-wow-duration="2s"alt="Vaconsultores" src="IMG/log.png" width="10px" height="3000px"></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle">
+   
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#inicio"><span class="sr-only"></span></a>
+      </li>
+   <li class="nav-item active">
+        <a  class="nav-link" href="#funcion"><span class="ress">Bienvenido al módulo de solicitud en línea </span>
+</a>
+      </li>
+    </ul>
+               <a href="https://www.vaconsultor.com.mx/"> <button type="button" class="btn btn-dark wow bounceIn	delay-2s" >¡Visita nuestro sitio web!</button></a>     
+ 
+ 
+      
+  </div>
+        </nav>
+
+        <article>  
+        
+           <form action="enviar.php" method="post" enctype="multipart/form-data" onsubmit="validar()" id="form">
+               <h2 class="ama">¡Sigue estos sencillos pasos y obtén una oferta de crédito!</h2>
+                             <h1 class="ama">1-Datos personales</h1>
+                        <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre Completo</label>
+      <input type="text" class="form-control" placeholder="Nombre Completo" required title="Por favor ingrese nombre sin acentos-Máximo 20 caracteres." pattern="[a-z-A-Z- ]{3,20}" name="nombre">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Apellidos</label>
+      <input type="text" class="form-control" placeholder="Apellidos" required title="Por favor ingrese nombre sin acentos-Máximo 20 caracteres." pattern="[a-z-A-Z- ]{3,20}" name="apellido">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" placeholder="Correo Electrónico" required name="correo">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Teléfono</label>
+      <input type="text" class="form-control" title="Por favor ingrese número de teléfono a 10 dígitos." pattern="[0-9]{1,10}" required placeholder="Celular o Casa" name="telefono">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Dirección</label>
+      <input type="text" class="form-control" placeholder="Domicilio" pattern="{3,50}" title="Por favor ingrese Domicilio Actual sin acentos-Máximo 40 caracteres." required name="direccion">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Ocupación</label>
+      <input type="text" class="form-control" placeholder="Puesto actual" required title="Por favor ingrese Puesto actual sin acentos-Máximo 20 caracteres." pattern="[a-z-A-Z- ]{3,20}" name="ocupacion">
+    </div>
+  </div>
+                      <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">Ingreso Mensual</label>
+      <input type="number" class="form-control" required title="Favor de ingresar su ingreso mensual"  min="3000.00" max="3500000.00" placeholder="Ingreso Mensual" name="salario">
+    </div>
+                             <div class="form-group col-md-4">
+      <label for="inputZip">Importe de crédito a solicitar</label>
+      <input type="number" class="form-control" id="inputZip" required  title="Favor de ingresar el importe de crédito a solicitar"  min="5000.00" max="3500000.00" name="importe" placeholder="Importe de crédito">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">¿Ha solicitado algún crédito con nosotros?</label>
+      <select class="form-control" required name="opcion">
+        <option selected value="" >-Seleccione-</option>
+        <option value="1"  name="opcion">Si</option>
+                  <option value="2"  name="opcion">No</option>
+      </select>
+    </div>
+
+  </div>
+
+                      
+      
+                      <br>
+                      <h1 class="ama">2-Documentación</h1>
+                    <br>
+                    <div class="form-row">
+    <div class="form-group col-md-4">
+    <label for="exampleFormControlFile1"><h4 class="white">Identificación Oficial</h4></label>
+        
+    <input type="file" class="form-control-file"  required name="ine" multiple onclick="INE()" accept=".pdf,.jpg,.png">
+    </div>
+                             <div class="form-group col-md-4">
+    <label for="exampleFormControlFile1"><h4 class="white">Comprobante de Ingresos</h4></label>
+    <input type="file" class="form-control-file"required name="ingresos" multiple onclick="INGRESOS()" accept=".pdf,.jpg,.png">
+    </div>
+    <div class="form-group col-md-4">
+     <label for="exampleFormControlFile1"><h4 class="white">Comprobante de Domicilio</h4></label>
+    <input type="file" class="form-control-file"  required name="compdo" multiple onclick="DOMICILIO()" accept=".pdf,.jpg,.png">
+    </div>
+  </div>
+                <br>          <br>     
+                       <h1 class="ama">3-Términos y condiciones</h1>                 
+              
+                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+Aviso de Privacidad
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Aviso de Privacidad</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+ 
+<p>
+VACON, SA. DE C.V., SOCIEDAD DE OBJETO MULTIPLE, ENTIDAD NO REGULADA, con domicilio en Calle Montecito Número 38, Piso 32, Oficina 16, Torre World Trade Center, Colonia Nápoles, Delegación Benito Juárez, C.P. 03810, México distrito federal., (en lo sucesivo denominada “VACON” en este aviso de privacidad se establece y detalla la manera en que será tratada por parte de “VACON” la información personal que como cliente o usuario de nuestros servicios sea proporcionada por usted, ya sea verbalmente, materialmente o por dispositivos electrónicos remitidos por cualquier vía o medio de comunicación, incluyendo nuestro Call Center y en nuestro sitio Web (https://www.vaconsultor.com.mx/), asimismo este Aviso de Privacidad, tiene como principal objetivo y campo de aplicación el establecer las medidas de seguridad adoptados  para proteger la información proporcionada, el cómo se recaba y el tratamiento o uso que de ella hacemos de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, a la que para efectos prácticos, en lo sucesivo denominaremos como (la “Ley”), .  
+<p>
+La información personal que sea entregada o recabada por “VACON” por medio de cualquier fuente permitida por la ley y aquella que haya sido proporcionada directamente por usted, ya sea verbalmente, por escrito, por medios electrónicos, ópticos o por cualquier otra tecnología, será utilizada única y exclusivamente para los fines de la relación jurídica que “VACON” mantenga con el titular de dichos datos personales. 
+
+ 
+
+Datos que pudieran ser tratados y recabados. 
+<p>
+Algunos de los datos personales que nos proporcione voluntariamente y que estarán sujetos al tratamiento establecido en este Aviso de Privacidad, por ejemplo: i) nombre completo; ii) e-mail; iii) teléfono fijo o de casa; iv) teléfono de oficina; y, v) celular; y, aquellos documentos que contengan información personal que nos sea entrega, tales como: i) credencial para votar con fotografía; ii) comprobantes de domicilio; iii) comprobantes de ingresos (recibos de nómina, estados de cuenta bancaria de nómina; y, en general todos aquellos documentos e información que forman parte de los expedientes que son necesarios para la debida integración y cumplimiento de la relación contractual que nos una, dicha información recabada, será utilizada entre otras cosas, para materializar el objeto del contrato de prestación de servicios de gestoría y realizar la investigación crediticia y análisis financiero que sirva como base de acuerdo a nuestras políticas de gestión de crédito, debiendo también al efecto proporcionar un correo electrónico para que podamos contactarlo, registrarse para recibir información de interés de nuestros productos o participar en trivias, concursos, etcétera.  Igual tratamiento recibirán aquellos datos o información que nos proporcione con miras a establecer una relación jurídica, incluyendo, pero sin limitar, la asesoría financiera, contable, jurídica y la gestión de créditos y cuando decida adquirir nuestra prestación de servicios, productos o que usted pueda o decida prestarnos algún servicio o vender algún producto, información o datos que pueden ser catalogados en los rubros siguientes: 
+
+ 
+<p>
+- Datos de identificación, como: nombre, domicilio particular, fecha de nacimiento, CURP, identificaciones personales de cualquier índole (licencia de conducir, pasaporte, formas migratorias, credencial para votar con fotografía, etcétera), número de teléfono fijo o móvil, fax, correo electrónico, comprobantes de ingresos que incluyan el número de seguridad social. 
+
+ 
+<p>
+- Datos académicos, como: resumen educativo, certificados, título, número de cédula profesional, especialidad. 
+
+ 
+<p>
+- Datos laborales, como: puesto, domicilio, correo electrónico, número de teléfono, fijo o móvil y fax. 
+
+ 
+<p>
+-  Datos de facturación, tales como: entidad a la que se hará el cargo, domicilio fiscal, RFC. 
+
+ 
+<p>
+- Datos financieros, tales como: información de cuentas bancarias personales o corporativas, ya sean de crédito, nómina, débito, fiscales, de inversión o cualquier otra índole, forma de pago, estados financieros, declaraciones de impuestos, escrituras públicas tanto de propiedad, como corporativas (constitutivas, Asambleas, Poderes o Sesiones de Consejo). 
+
+ 
+<p>
+Finalidad y Uso de los datos personales 
+
+De conformidad con lo que establecen los artículos 8° y 9° de la Ley, requerimos de su consentimiento expreso para el tratamiento de sus datos financieros, patrimoniales y personales sensibles, por lo que al firmar y/o aceptar electrónicamente este Aviso de Privacidad, usted está de acuerdo en que “VACON” maneje dichos datos, en los términos establecidos por la “Ley”. 
+
+ 
+<p>
+Sus datos personales, información sensible y/o de cualquier otra índole que se encuentren en posesión de “VACON” serán utilizados, por ésta última, en estricto apego a la “Ley” y su reglamento y de conformidad con la Política de Privacidad, pudiendo ser utilizada para cualquiera de las actividades que “VACON” desempeña lícitamente y compatibles con las descritas en párrafos anteriores, o que puedan considerarse análogas, ya sea de manera física, telefónica, electrónica o por cualquier otra tecnología o medio al alcance o en uso de “VACON”.  
+
+ 
+<p>
+Transferencia y/o Cesión de los Datos Personales. 
+<p>
+La(s) base(s) de datos en que se encuentra contenida su información es responsabilidad de “VACON” y no venderá, cederá o transferirá sus datos personales a terceros contratados por ésta última, sin su consentimiento previo; sin embargo, “VACON” podrá transferir sus datos personales cuando dicha transferencia esté prevista en la “Ley” o de conformidad con los alcances de la relación jurídica que se establezca entre usted y “VACON”. 
+
+ 
+<p>
+Seguridad de los Datos Personales. 
+<p>
+“VACON” ha adoptado y mantiene las medidas de seguridad, administrativas, técnicas y físicas necesarias para proteger sus datos personales de posibles daños, perdidas, alteración o acceso no autorizado y seguimos procedimientos apropiados para garantizar la seguridad de la información que como cliente o usuario nos proporciona. No obstante, lo anterior, es claro que ninguna comunicación de datos por Internet es totalmente segura, por lo que “VACON” no puede garantizar que sus datos personales estarán libres de todo daño, pérdida, alteración, destrucción o el uso, acceso o tratamiento no autorizado. 
+
+ 
+<p>
+El titular entiende y acepta que “VACON” podrá transferir sus datos personales a terceros dentro o fuera del país, incluyendo sin limitar a tales como Instituciones Financieras, debidamente autorizadas para operar en la República Mexicana o terceros debidamente contratados por “VACON” para que realicen en su nombre y representación ciertas actividades comerciales o de servicio para el cumplimiento de las obligaciones de prestación de servicios que serán prestados por “VACON” objeto de la relación jurídica existente entre esta última y el titular de los datos personales. Estas terceras partes deberán tratar los datos en cumplimiento a las instrucciones y políticas de “VACON” y en acatamiento y cumplimiento a lo establecido por la “Ley”. Si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que tácitamente ha otorgado su consentimiento para ello. 
+
+ 
+<p>
+En cualquier caso “VACON” seleccionará los recursos humanos que considere confiables y que se comprometan por contrato u otros actos jurídicos aplicables, a implementar las medidas de seguridad necesarias para garantizar el nivel de protección adecuado a sus datos personales, en el entendido que deberán garantizar los mismos niveles de protección que “VACON” implementa durante el tratamiento de sus datos personales. 
+
+ 
+<p>
+Derechos que le corresponden al titular de datos personales 
+<p>
+Como titular de datos personales, usted puede ejercitar ante el Encargado de Protección de Datos Personales, los derechos de acceso, rectificación, cancelación y oposición (derechos “ARCO”). 
+
+ 
+<p>
+Derechos que le corresponden al titular de datos personales 
+<p>
+Usted como titular de los Datos Personales puede ejercer los derechos de acceso, rectificación, cancelación u oposición,  respecto de los datos personales que le conciernen, así como revocar el consentimiento que para tal fin nos haya otorgado, o bien limitar el uso o divulgación de los mismos,  por lo que puede contactarnos enviando una solicitud escrita a “VACON”  con domicilio en Calle Montecito Número 38 Piso 8, Oficina 16, Torre World Trade Center, Colonia Nápoles, Delegación Benito Juárez, C.P. 03810, México Distrito Federal., o bien, a través del correo electrónico ______________, o también podrá concertar una cita, en la Ciudad de México o área metropolitana, comunicándose a los teléfonos de atención a clientes: ____________ extensión ___, o del interior de la República Mexicana al teléfono __________ lada sin costo, debiendo al efecto indicar por lo menos su nombre, domicilio completo o cualquier otro dato o documento que permita su identificación, así como el objetivo de su solicitud o trámite, de conformidad con la “Ley” y su reglamento.  
+
+ 
+<p>
+El titular de los datos personales y “VACON” acuerdan que en caso de que se requiera cualquier modificación a lo estipulado en el presente Aviso de Privacidad, “VACON” hará del conocimiento del titular, los cambios respectivos por cualquier medio o forma para que éste último se manifieste respecto de los mismos, en el entendido que en caso de no recibir respuesta negativa expresa de su parte, entenderemos que tácitamente ha aceptado de conformidad dichas modificaciones o cambios realizados.  
+
+ 
+<p>
+Este Aviso de Privacidad es aplicable a las personas físicas que se localizan en los Estados Unidos Mexicanos, por lo que “VACON” no acepta la jurisdicción o legislación diferente de la aplicable en el territorio mexicano. Este Aviso de Privacidad únicamente será aplicable a las personas físicas que nos proporcionen su información. 
+
+ 
+<p>
+Al firmar físicamente o aceptar el presente aviso de privacidad por algún medio electrónico, usted declara estar de acuerdo en otorgar su consentimiento para el uso de sus datos personales para los fines y bajo los términos y condiciones aquí expuestos, liberando a VACON, SA. DE C.V., SOCIEDAD DE OBJETO MULTIPLE, ENTIDAD NO REGULADA de cualquier responsabilidad, reclamo o queja ante autoridad competente por el tratamiento autorizado que mediante el presente Aviso de Privacidad está otorgando respecto de sus datos personales. 
+
+ 
+<p>
+En caso de no estar de acuerdo con el presente Aviso de Privacidad, no firme ni envíe su aceptación por medios legalmente válidos, no podrá tener relación jurídica y/o comercial alguna con “VACON” por lo que no proporcionará ningún tipo de datos personales a la empresa. 
+
+ 
+<p>
+Enterado de los términos y condiciones expuestos en el presente aviso de privacidad para su autorización y conocimientos al aceptar los términos y condiciones. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<label><input type="checkbox" value="first_checkbox"  title="Favor de aceptar Términos y Condiciones" required> Acepto Aviso de Privacidad</label><br><br>
+               <button type="submit" class="btn btn-dark">Enviar</button>
+                      
+ 
+</form>  
+        
+    </article>
+   
+
+     
+       <div class="pag">
+        
+           <div class="paguno"><br>
+      <h2 class="enca" id="anuncios">Ubicación</h2> 
+                      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":319,"width":700,"zoom":17,"queryString":"Montecito no. 38, Nápoles, 03810 Ciudad de México, CDMX, México","place_id":"EkJNb250ZWNpdG8gbm8uIDM4LCBOw6Fwb2xlcywgMDM4MTAgQ2l1ZGFkIGRlIE3DqXhpY28sIENETVgsIE3DqXhpY28iMBIuChQKEgmTbLYXcv_RhRHACFaYTX_F7xAmKhQKEgn1bDP0cf_RhRGu1q2y-tM-9Q","satellite":false,"centerCoord":[19.39469280559068,-99.1723711],"cid":"0x42832e8f338999cb","lang":"es","cityUrl":"/mexico/mexico-city","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"159568"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=159568';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/es/map-embed?embed_id=159568">1 Map</a></div><br>
+      
+       <br></div>
+           
+                  <div class="pagdos">
+                      <br><br> <h2 class="enca" id="anuncios">Contáctanos</h2> 
+
+                   
+                      <h5>Montecito No. 38, Nápoles,
+Benito Juárez, 03810 Ciudad de
+México.</h5>
+                
+
+     <h5><li>41-95-62-55</li><li>contacto@vaconsultor.com.mx</li></h5>
+           
+               <br>
+           <H2 class="enca">Síguenos en redes sociales</H2>
+                <a target="_blank"  href="mailto:contacto@vaconsultor.com.mx"><img class="pic" alt="Mail" src="IMG/correo.png" title="Correo electronico"></a>
+                <a target="_blank"  href="https://www.facebook.com/VConsultores/" title="Facebook"><img class="pic" alt="Facebook" src="IMG/facebook(2).png"></a>
+                <a target="_blank"  href="https://wa.me/5215578523181" title="Whatsapp"><img class="pic"  src="IMG/wha.png" ></a>   
+           </div>
+           
+           
+           </div>
+
+      
+    <script type="text/javascript">
+           
+           function INE() {
+               
+               
+               var nombre=alert("Ingrese por favor identificación oficial  por ambos lados.-Identificación oficial  valida: INE-Licencia de Conducir, pasaporte.");
+        
+           }
+           
+                  function INGRESOS() {
+               
+               
+               var nombre=alert("Ingrese por favor comprobante de ingresos no mayor a 3 meses de antigüedad-Comprobante de Ingresos valido: Recibo de nómina, carta de ingresos.");
+           }
+           
+             function DOMICILIO() {
+                
+               var nombre=alert("Ingrese por favor comprobante de domicilio no mayor a 3 meses de antigüedad. -Comprobante de Domicilio valido: Agua, Luz, Telefonía, Predial.");
+           }
+             
+            
+               function apellido() {
+               
+               
+               var apellido=alert("Ingrese por favor apellido paterno y materno.");
+           }
+               function importe() {
+               
+               
+               var importe=alert("Ingrese por favor el importe de crédito a solicitar, consierando que el importe minimo es de $50,000.00 pesos.");
+           }
+           
+                 
+           function validar() {
+    
+         
+         var val= prompt("Pregunta de seguridad  ¿Cual es el resultado de la siguiente suma? 5+2");   
+                
+                
+                if(val=="7")
+                { 
+                 alert('¡Muchas gracias por contactarnos, en breve uno de nuestros asesores de pondrá en contacto con usted, agradecemos su preferencia!'); 
+                }
+                else
+                    {
+                   alert("Por favor ingrese nuevamente, la respuesta es incorrecta.");  
+                  return validaruno();
+                   }         
+                    
+                } 
+            
+    function validaruno() {
+    
+         
+         var val= prompt("Pregunta de seguridad  ¿Cual es el resultado de la siguiente suma? 3+3");   
+                
+                
+                if(val=="6")
+                { 
+                 alert('¡Muchas gracias por contactarnos, en breve uno de nuestros asesores de pondrá en contacto con usted, agradecemos su preferencia!'); 
+                }
+                else
+                    {
+                   alert("Por favor ingrese nuevamente, la respuesta es incorrecta.");  
+                  return validar();
+                   }         
+                    
+                } 
+           
+           </script>   
+     </body>
+ <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="247336255929132"
+  theme_color="#525955"
+  logged_in_greeting="¡Bienvenido a VACONSULTORES!  Solicita más información aquí"
+  logged_out_greeting="¡Bienvenido a VACONSULTORES!  Solicita más información aquí">
+      </div>
+   
+
+
+</html>

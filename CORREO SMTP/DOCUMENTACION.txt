@@ -1,0 +1,7 @@
+
+DOCUMENTACION:
+
+1-INGRESA ESTOS ARCHIVOS EN TU CARPETA HTTDOCS DE TU LOCALHOST O PUBLIC HTML SI LO SUBIRAS A UN SERVIDOR WEB
+2-CREA un correo de tu empresa y guarda el correo y la contraseña.
+3-Edita el fichero de enviar.php  e ingresa el correo de tu empresa asi como la contraseña y el correo de destino
+3-Listo realiza la prueba.
